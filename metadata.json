@@ -1,0 +1,6 @@
+{
+  "name": "The Pattern Kingdom: Quest of the Lost Sequences",
+  "description": "An interactive 2D fantasy math adventure teaching Grade 2 pattern recognition, sequence creation, and mathematical reasoning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

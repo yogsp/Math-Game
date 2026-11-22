@@ -1,0 +1,786 @@
+# BUILD A COMPLETE INTERACTIVE EDUCATIONAL GAME: THE PATTERN KINGDOM
+
+## 1. YOUR ROLE AND MISSION
+
+You are an elite multidisciplinary game development studio combining the expertise of:
+
+- A creative director experienced in premium children's adventure games.
+- A senior game designer specializing in interactive puzzles and rewarding progression systems.
+- A Singapore primary mathematics educator experienced with Grade 2 learners.
+- A mathematics competition coach who trains children two to three grade levels above their current level.
+- An instructional designer specializing in cognitive development, formative assessment, and adaptive learning.
+- A senior React/TypeScript game developer.
+- A children's UX designer specializing in iPad touch interfaces.
+- A 2D game artist, animation director, and sound designer.
+- A software quality assurance engineer.
+
+Your mission is to **BUILD AND IMPLEMENT a complete, playable, polished educational adventure game**, not produce a specification, design document, wireframe, mockup, or nonfunctional prototype.
+
+Game title: **The Pattern Kingdom: Quest of the Lost Sequences**
+
+The game must look and feel like a thoughtfully art-directed, premium children's game from a professional game development studio.
+
+It must teach mathematics effectively, respond intelligently to learner performance, and be enjoyable enough that a seven-year-old voluntarily wants to play again.
+
+Prioritize excellent gameplay, mathematical correctness, and reliability over unnecessary feature complexity.
+
+## 2. THE PLAYER
+
+The primary player is:
+
+- Seven years old.
+- Currently in Grade 2 at De La Salle Santiago Zobel School in the Philippines.
+- Preparing for a Math summative test within approximately three days.
+- A member of the school's Math team.
+- Experienced in participating in Math competitions with some questions approximately two to three grade levels above her current level.
+- Capable of advanced reasoning but still developing division skills and fluency in multiplying two- and three-digit numbers.
+
+The child should not be penalized for relatively slow arithmetic when the learning objective is pattern recognition.
+
+Use clear, concise, age-appropriate English.
+
+The game must work especially well on an iPad with finger-based controls.
+
+Expected play session: approximately 15 minutes.
+
+## 3. EDUCATIONAL OBJECTIVES
+
+The game's primary objectives are to teach the child to:
+
+1. Identify the next term or terms in increasing patterns.
+2. Identify the next term or terms in decreasing patterns.
+3. Recognize and extend numerical patterns.
+4. Recognize and extend alphabetical patterns.
+5. Recognize and extend repeating patterns.
+6. Recognize and extend visual patterns involving shapes, colors, sizes, orientation, or arrangement.
+7. Recognize and extend rhythmic patterns.
+8. Find missing terms at the beginning, middle, or end of a sequence.
+9. Create her own increasing or decreasing patterns.
+10. Explain the underlying rule governing a pattern.
+
+**Critical requirement:** Recognizing patterns and creating patterns must receive meaningful, separate instruction and assessment. Do not focus exclusively on finding the next number.
+
+The primary goal is Grade 2 summative-test mastery. Advanced competition training must be available but kept separate from the child's main school-readiness score.
+
+Do not make division or advanced multiplication mandatory for Grade 2 progression.
+
+If school-provided worksheets or examples are not yet supplied, use these competencies as provisional scope and clearly label the content as an approximation of DLSZ expectations, not an official reproduction of its assessments.
+
+Make it possible to add school-specific questions and adjust the question bank later.
+
+## 4. CORE GAME CONCEPT AND STORY
+
+Long ago, the Pattern Kingdom was held together by the Great Sequence Crystal.
+
+The crystal controlled the repeating rhythms of the forest, the rising steps of the mountain, the colors of the flowers, and the magical bridges connecting the kingdom.
+
+One day, its sequence fragments scattered across the land.
+
+Now the patterns are broken.
+
+Stairways have missing steps. Musical flowers have forgotten their melodies. Bridges have lost their stones. Castle gates have forgotten their secret codes.
+
+The player is a young Pattern Guardian whose mission is to restore the kingdom by recognizing, completing, and creating patterns.
+
+The story should be charming, imaginative, visually rich, and understandable to a seven-year-old.
+
+Avoid overly long dialogues, complex lore, frightening villains, excessive cutscenes, or distracting subplots.
+
+Every major progression event must be connected to a genuine mathematical learning accomplishment.
+
+The central gameplay loop is:
+
+EXPLORE → DISCOVER A BROKEN PATTERN → INTERACT → REASON → SOLVE → WATCH THE WORLD CHANGE → EARN A REWARD → UNLOCK ANOTHER AREA.
+
+Do not merely disguise a multiple-choice worksheet with an adventure background.
+
+The pattern puzzles must be integrated into the environment.
+
+## 5. WORLD DESIGN
+
+Create a connected 2D fantasy kingdom with at least four distinct themed areas.
+
+### Area 1: The Counting Grove
+
+Learning focus:
+- Simple increasing number patterns.
+- Simple decreasing number patterns.
+- Identifying constant differences.
+- Predicting the next one or two terms.
+
+Gameplay examples:
+- Complete a sequence of stepping stones across a river.
+- Restore a staircase with missing number tiles.
+- Help a creature arrange growing or shrinking piles of magical fruit.
+
+For example, a sequence might be:
+
+4, 8, 12, 16, ?
+
+The correct answer is 20.
+
+The child can drag a numbered stone into place. The bridge physically extends when the answer is correct.
+
+### Area 2: The Enchanted Garden
+
+Learning focus:
+- Repeating patterns.
+- Shapes, colors, sizes, and orientations.
+- Alphabetical sequences.
+- Finding missing elements.
+
+Gameplay examples:
+- Restore flower arrangements using repeating color patterns.
+- Complete a magical vine that follows an ABC pattern.
+- Rearrange letter lanterns in a sequence.
+- Identify a missing shape in a repeated arrangement.
+
+Use clear visual differentiation so the pattern is understandable without relying exclusively on color.
+
+### Area 3: The Rhythm Woods
+
+Learning focus:
+- Repeating rhythmic patterns.
+- Identifying and extending audible sequences.
+- Translating rhythmic sequences into visible patterns.
+
+Gameplay examples:
+- Hear a sequence of three or four distinct percussion sounds.
+- Select or tap the next sound.
+- Reconstruct a musical pattern using interactive sound pads.
+- Help musical flowers repeat a rhythm.
+
+Display visual symbols alongside sounds to reinforce the sequence and make the game usable with audio muted.
+
+Provide a replay button and adjustable music and effects settings.
+
+Avoid exercises requiring precise musical timing. Assess recognition of rhythmic structure rather than motor speed.
+
+### Area 4: The Castle of Sequences
+
+Learning focus:
+- Creating increasing and decreasing patterns.
+- Explaining pattern rules.
+- Combining previously mastered competencies.
+- Summative-test-style questions.
+
+Gameplay examples:
+- Build a staircase using a selected increasing rule.
+- Construct a magical bridge following a decreasing numerical pattern.
+- Choose a pattern rule, generate a sequence, and demonstrate that the rule works.
+- Repair a castle's sequence mechanism using mixed pattern puzzles.
+
+At least one entire mission must focus on constructing original patterns rather than completing existing ones.
+
+## 6. CHARACTER AND MOVEMENT SYSTEM
+
+Create a charming, original young adventurer who can move through the kingdom.
+
+Use a consistent, recognizable character silhouette with appealing animations.
+
+Controls:
+- Touch-friendly movement on iPad.
+- Large on-screen directional controls or intuitive tap-to-move interactions.
+- Mouse and keyboard support as secondary options.
+- Clear interaction indicators for puzzle objects.
+- No precision jumping, fast reactions, or stressful platforming.
+
+The game should be about mathematics and discovery, not dexterity.
+
+The player must visibly move between interactive objects.
+
+Include:
+- Idle animation.
+- Walking animation.
+- Simple celebration animation.
+- Puzzle interaction animation.
+- Positive reactions from friendly world characters.
+
+If full character movement cannot be implemented reliably in the initial build, implement a polished, navigable scene-based exploration system with meaningful interactive hotspots. Do not substitute a static menu of worksheets.
+
+## 7. THE MATHEMATICS QUESTION ENGINE
+
+Build a reusable, structured question engine.
+
+Every question must include:
+
+- Unique question ID.
+- Topic or competency.
+- Difficulty level.
+- Correct answer.
+- Rule or mathematical reasoning.
+- Concise child-friendly explanation.
+- Optional first hint.
+- Optional second hint.
+- Interaction type.
+- Validation logic.
+- Misconception tags.
+- Information needed for parent reporting.
+
+Support the following question types:
+
+**A. Complete the next term**
+Example: 6, 9, 12, 15, ?
+
+**B. Complete two missing terms**
+Example: 30, 25, 20, __, __
+
+**C. Find a missing middle term**
+Example: 8, 12, __, 20, 24
+
+**D. Find the governing rule**
+Example: Identify whether a sequence increases by 3, increases by 5, or follows another rule.
+
+**E. Complete a visual sequence**
+Use real draggable symbols or objects.
+
+**F. Complete a repeating pattern**
+Support AB, ABB, AAB, ABC, and other suitable patterns.
+
+**G. Complete an alphabetical sequence**
+For example: A, C, E, G, ?
+
+**H. Complete a rhythmic sequence**
+Use visible and audible symbols.
+
+**I. Create an increasing pattern**
+Present a starting value and ask the player to choose a suitable rule and construct the required number of terms.
+
+**J. Create a decreasing pattern**
+Use the same approach with decreasing values.
+
+**K. Error detection**
+Show a pattern with one incorrect term and ask the player to identify and repair it.
+
+**L. Reasoning challenge**
+Ask which explanation correctly describes a pattern.
+
+Include a substantial, diverse, prevalidated initial question bank covering every required Grade 2 competency. Add deterministic generation templates for additional practice questions so sessions do not repeat the same small group of questions.
+
+Avoid ambiguous visual sequences and poorly specified number sequences.
+
+For numerical problems, provide enough information to establish the intended rule. Prefer unique, clearly supported rules and reject generated items where multiple reasonable answers could be defensible.
+
+The application must calculate answers using deterministic program logic rather than asking an AI language model to decide whether answers are mathematically correct.
+
+## 8. ADAPTIVE DIFFICULTY
+
+Create four educational difficulty tiers:
+
+### Tier 1 — Pattern Explorer
+
+Simple Grade 2 patterns.
+
+Examples:
+- 2, 4, 6, 8, ?
+- 15, 14, 13, 12, ?
+- Red, Blue, Red, Blue, ?
+
+Focus on understanding.
+
+### Tier 2 — Pattern Solver
+
+More demanding Grade 2 school-style patterns.
+
+Examples:
+- 45, 40, 35, __, 25
+- A, C, E, G, ?
+- Build a five-term increasing sequence starting at 7 and adding 4 each time.
+
+Focus on independent application.
+
+### Tier 3 — Pattern Detective
+
+Advanced pattern reasoning that may resemble problems given to older students.
+
+Examples:
+- 2, 5, 10, 17, 26, ?
+- 1, 3, 6, 10, 15, ?
+- Alternating and multi-rule patterns with clear explanations.
+
+Tier 3 must remain optional and separate from standard Grade 2 summative assessment.
+
+### Tier 4 — Champion's Tower
+
+Optional Math competition-style challenges.
+
+Include:
+- Multi-step sequences.
+- Alternating rules.
+- More sophisticated visual structures.
+- Finding the wrong term in a complex sequence.
+- Creating patterns under constraints.
+- Logical reasoning requiring multiple observations.
+
+Do not assume fluency with division or multi-digit multiplication.
+
+Advanced puzzles must provide conceptual support and avoid making arithmetic fluency the central obstacle.
+
+### Adaptive logic
+
+- Start with a brief diagnostic covering the six selected pattern categories.
+- Track mastery separately for each topic.
+- Increase difficulty after a consistent record of accurate, independent answers.
+- Reduce difficulty and offer scaffolding if the child struggles.
+- Revisit previously missed concepts using new examples.
+- Distinguish independent correct answers from answers reached with hints.
+- Do not equate speed with mathematical ability.
+- Do not promote the player to an advanced topic merely because she completed an unrelated easier topic.
+
+Use transparent deterministic adaptive logic in the application.
+
+Suggested mastery threshold: approximately 80–85% independent accuracy over a meaningful number of recent questions, with topic coverage requirements.
+
+These are adjustable product-design thresholds, not validated psychometric measurements.
+
+## 9. HINTS, MISTAKES AND EXPLANATIONS
+
+The game must function like an excellent primary mathematics teacher.
+
+When the student answers incorrectly, do not simply display a red X and the correct answer.
+
+Use a graduated hint system.
+
+Example question:
+
+5, 10, 15, 20, ?
+
+First hint:
+"Look at how much each number grows."
+
+Second hint:
+"From 5 to 10, we add 5. Does that happen again?"
+
+Explanation:
+"Every number is 5 more than the number before it. So 20 + 5 = 25."
+
+Where useful, illustrate the difference using groups of objects, number lines, animated arrows, or interactive blocks.
+
+For incorrect answers:
+- Give friendly, specific feedback.
+- Allow another attempt.
+- Present the reasoning progressively.
+- Provide a worked example when needed.
+- Avoid shame, negative labels, or punitive effects.
+
+A correct answer after hints is still a success, but should be recorded separately from independent mastery.
+
+Use short instructions and avoid excessive reading.
+
+## 10. INTERACTION DESIGN
+
+Use a variety of meaningful interaction mechanics:
+
+- Dragging number tiles into empty spaces.
+- Reordering letters.
+- Completing stepping-stone bridges.
+- Placing missing shapes.
+- Constructing pattern sequences.
+- Selecting the correct rule.
+- Tapping rhythm pads.
+- Moving a character toward interactive objects.
+- Fixing an incorrect term.
+- Building a pattern from scratch.
+
+A minimum of six genuinely functioning puzzle interaction types must be implemented.
+
+Do not make every puzzle a different visual skin of the same multiple-choice component.
+
+For children:
+- All touch targets must be generous and well spaced.
+- Draggable objects must respond naturally to touch.
+- Provide snapping feedback.
+- Provide a tap-to-select/tap-to-place alternative when dragging is difficult.
+- Prevent accidental page scrolling during interactions.
+- Avoid tiny controls or text-heavy instruction panels.
+- Make correct and incorrect states immediately understandable.
+
+## 11. ASSESSMENT MODES
+
+Create three primary learning modes.
+
+### A. Adventure Mode
+
+Story-driven exploration and adaptive practice.
+
+The student earns progress by solving mathematical challenges.
+
+No harsh countdown timers.
+
+The world should change visibly when puzzles are completed.
+
+### B. Summative Test Academy
+
+A dedicated examination preparation mode.
+
+Include:
+
+1. Diagnostic assessment.
+2. Topic-specific review.
+3. Mixed-topic practice.
+4. Full mock summative test.
+5. Review of incorrect answers.
+
+Build an initial configurable 20-question mock assessment covering all six selected categories, including pattern creation.
+
+The assessment should represent both the ability to extend a pattern and the ability to generate one.
+
+Provide a parent-controlled option for timed or untimed assessment.
+
+During a mock test:
+- No adaptive hints.
+- No immediate correctness indicators.
+- Allow answer review before submission.
+- Show explanations after submission.
+- Report results separately by competency.
+
+The mock test is a practice assessment, not an official DLSZ examination.
+
+### C. Champion's Tower
+
+Optional competition-style challenges.
+
+Provide advanced puzzles for Grades 3–5-style reasoning.
+
+The tower should unlock after the student shows competence in core concepts, but it should not replace or distort the Grade 2 test-preparation pathway.
+
+Keep competition performance separate from school-readiness reporting.
+
+## 12. THREE-DAY REVIEW JOURNEY
+
+The summative test is imminent, so include a recommended three-day learning path.
+
+**Day 1 — Discover and Diagnose**
+
+- Short diagnostic.
+- Foundation lessons.
+- Focus on increasing and decreasing number patterns.
+- Introduce letters and repeating patterns.
+- Identify weak areas.
+
+**Day 2 — Practice and Build**
+
+- Review weak competencies.
+- Practice visual and rhythmic patterns.
+- Emphasize creating original increasing and decreasing patterns.
+- Mixed practice.
+- Revisit previously missed questions.
+
+**Day 3 — Prove Your Powers**
+
+- Brief warm-up.
+- Full mixed-topic mock assessment.
+- Review incorrect answers.
+- Short targeted reinforcement session.
+- Optional confidence-building challenge.
+
+Each daily mission should fit into approximately 15 minutes where practical, while allowing the child to return for additional sessions.
+
+Make the journey flexible. A parent must be able to access any day or mode without waiting for real-world calendar time.
+
+## 13. MOTIVATION AND REWARDS
+
+The main motivation is exploration, discovery, and meaningful progress.
+
+Use:
+- Unlockable areas.
+- Restored bridges.
+- Activated crystals.
+- Colorful environmental changes.
+- Friendly character interactions.
+- Story progression.
+- Small collectible discoveries.
+- Celebration animations.
+
+Avoid:
+- Gambling-like rewards.
+- Purchases or premium currencies.
+- Endless reward loops.
+- Excessive pop-ups.
+- Punishment for wrong answers.
+- Aggressive countdowns.
+- Manipulative streak requirements.
+
+The reward should reinforce the feeling that mathematics enables exploration.
+
+The child should feel that she is solving problems and restoring the kingdom, not merely earning points.
+
+## 14. VISUAL ART DIRECTION
+
+The aesthetic must be distinctive, cohesive, and professional.
+
+Art direction:
+- Premium hand-illustrated 2D fantasy adventure.
+- Painterly backgrounds.
+- Soft, vibrant colors.
+- Rich environmental detail.
+- Whimsical architecture.
+- Expressive original characters.
+- Carefully selected typography.
+- Elegant UI panels inspired by fantasy game interfaces.
+- Layered scenery and subtle parallax.
+- Soft lighting and magical effects.
+- Satisfying animations tied to puzzle completion.
+
+Create a coherent visual world rather than a collection of unrelated AI-generated images.
+
+The game should have an identifiable art identity across every screen.
+
+Important visual restrictions:
+- Avoid generic SaaS dashboard layouts.
+- Avoid standard ChatGPT-style cards and grids.
+- Avoid plain white backgrounds with purple gradients.
+- Avoid generic emoji as primary game art.
+- Avoid standard Bootstrap-looking buttons.
+- Avoid stock illustrations with mismatched styles.
+- Avoid oversized instructional panels covering the game.
+- Avoid inconsistent character designs across scenes.
+
+Where image generation is available, create original, visually consistent background and character assets.
+
+Where generated assets are unavailable or unreliable, create polished custom SVG or canvas artwork instead. Do not leave missing images or broken placeholders.
+
+Game visuals must be actual components of the playable application, not just a promotional concept image.
+
+## 15. SOUND DESIGN
+
+Provide:
+- Gentle fantasy background music.
+- Clear, pleasant puzzle interaction sounds.
+- Soft success sounds.
+- Distinct rhythmic puzzle sounds.
+- Subtle environmental ambience.
+- Music and sound-effects volume controls.
+- Mute button.
+
+All music and sound must be original, appropriately licensed, or generated directly within the application.
+
+Respect browser audio playback restrictions. Start audio only following a permitted player interaction.
+
+Provide a complete silent-play experience.
+
+## 16. IPAD-FIRST UX DESIGN
+
+Optimize primarily for iPad in landscape orientation while supporting portrait orientation when practical.
+
+The game must work with touch alone.
+
+Technical UX requirements:
+- Responsive game viewport.
+- Correct scaling across common iPad sizes.
+- Safe-area support.
+- No cropped gameplay elements.
+- No horizontal page overflow.
+- No text that becomes unreadably small.
+- No essential information dependent on hover.
+- Touch-friendly navigation.
+- Reliable drag-and-drop.
+- Smooth scene transitions.
+- Accessible contrast.
+- Stable layout when the virtual keyboard appears.
+
+Use web animation and rendering techniques that perform smoothly on recent iPads.
+
+Maintain legible typography and adequate spacing.
+
+## 17. PARENT DASHBOARD
+
+Create a separate, child-friendly but parent-oriented dashboard accessible from the game menu.
+
+The dashboard must show:
+
+- Overall practice progress.
+- Grade 2 summative readiness by topic.
+- Accuracy without hints.
+- Accuracy after hints.
+- Completed questions.
+- Recent mistakes and misconceptions.
+- Topics needing review.
+- Mock assessment results.
+- Improvement across sessions.
+- Suggested next activity.
+- Separate Math competition progress.
+
+Show the six primary competencies individually:
+1. Number patterns.
+2. Letter patterns.
+3. Visual patterns.
+4. Repeating patterns.
+5. Rhythm patterns.
+6. Missing terms.
+
+Track increasing-pattern creation and decreasing-pattern creation as distinct skills.
+
+Use clear, readable visuals and labels.
+
+Never claim a numerical percentage is a scientifically validated probability of passing the examination.
+
+If there is insufficient evidence to judge mastery, say "Not enough practice yet."
+
+Include a way to reset progress with confirmation.
+
+## 18. SAVING PROGRESS
+
+Save local progress automatically.
+
+For the initial version:
+- Use browser local storage or IndexedDB.
+- Do not require login or account creation.
+- Do not collect unnecessary personal information.
+- Allow the player to resume previous progress.
+- Preserve completed levels, assessment results, and unlocked areas.
+- Persist sound preferences.
+- Support resetting progress.
+- Explain that clearing browser storage can erase local progress.
+
+Do not require a paid database, external account, or Gemini API request just to play the game.
+
+Provide a simple optional export/import mechanism for progress if feasible.
+
+## 19. ENGINEERING REQUIREMENTS
+
+Use Google AI Studio Build mode to implement the application.
+
+Preferred architecture:
+- React.
+- TypeScript.
+- Maintainable component structure.
+- Reusable puzzle components.
+- Centralized state management.
+- Data-driven game levels.
+- Deterministic question generation.
+- Mathematical validation functions.
+- Responsive layouts.
+- Custom CSS and/or suitable animation libraries.
+- SVG, Canvas, or lightweight game-rendering libraries where beneficial.
+
+Choose the simplest architecture capable of delivering a polished, stable experience.
+
+Avoid unnecessary dependencies and heavy rendering engines that could reduce performance on iPad.
+
+Organize code into clear logical systems:
+- Game scenes and navigation.
+- Character interaction.
+- Puzzle engine.
+- Question bank.
+- Difficulty adaptation.
+- Assessment mode.
+- Feedback and hints.
+- Rewards and progression.
+- Parent dashboard.
+- Data persistence.
+- Audio management.
+
+If Gemini is used dynamically for explanations or additional content, keep that feature optional and use the secure server-side integration supported by AI Studio.
+
+Never expose an API key in client-side code.
+
+The core game, included question bank, scoring, and mathematical correctness must work without a live Gemini API connection.
+
+## 20. TESTING AND QUALITY ASSURANCE
+
+Before presenting the build as complete, verify the core application.
+
+Test:
+- Launching and starting a new game.
+- Navigating between game areas.
+- Character movement or scene navigation.
+- Opening a puzzle.
+- Correct answer handling.
+- Incorrect answer handling.
+- Hint progression.
+- Drag-and-drop behavior.
+- Tap-to-place behavior.
+- Completing an entire game mission.
+- Unlocking a new area.
+- Playing a rhythmic puzzle.
+- Generating an original increasing pattern.
+- Generating an original decreasing pattern.
+- Submitting a mock assessment.
+- Viewing explanations and results.
+- Updating the parent dashboard.
+- Saving and restoring progress.
+- Muting sound.
+- Resetting progress.
+- Layout behavior in iPad landscape and portrait modes.
+
+Add automated unit tests for the mathematical question engine where possible.
+
+Mathematical test cases must cover:
+- Correct generation of increasing sequences.
+- Correct generation of decreasing sequences.
+- Missing terms.
+- Letter patterns.
+- Repeating patterns.
+- Alternating patterns.
+- Correct validation of student-created sequences.
+- Rejection of invalid answers.
+- Avoidance of ambiguous generated questions.
+
+Do not falsely state that you have tested on physical iPad hardware if you have not.
+
+Clearly report anything not yet tested.
+
+## 21. IMPLEMENTATION PRIORITIES
+
+Prioritize in this order:
+
+P0 — Fully playable and mathematically correct:
+- Working application.
+- Navigable kingdom.
+- Complete Grade 2 question coverage.
+- Functional core puzzles.
+- Answer validation.
+- Feedback and hints.
+- Mock assessment.
+- Local progress saving.
+
+P1 — Premium experience:
+- Cohesive game art.
+- Character animation.
+- Environmental puzzle integration.
+- Rewards.
+- Sound effects and music.
+- Parent dashboard polish.
+
+P2 — Enrichment:
+- Advanced Champion's Tower.
+- Additional scenes.
+- More collectible rewards.
+- Expanded question generation.
+- Additional environmental effects.
+
+Do not sacrifice functional P0 features for decorative P2 features.
+
+If build constraints prevent implementing everything at once, complete a coherent, fully playable vertical slice covering all six Grade 2 pattern categories, with a real beginning, progression, and completion state. Clearly identify remaining unfinished features.
+
+Do not present inert buttons, fake dashboards, nonfunctional levels, or placeholder puzzle interactions as finished functionality.
+
+## 22. FINAL EXPECTED RESULT
+
+Produce the actual working game in Google AI Studio's interactive preview.
+
+The opening screen should immediately establish the fantasy world and invite the child to begin her adventure.
+
+Within the first minute, the player should be able to:
+1. Start the game.
+2. Enter the kingdom.
+3. Encounter an interactive pattern.
+4. Solve the puzzle.
+5. See a rewarding environmental change.
+6. Continue exploring.
+
+Do not stop at a plan.
+
+Implement the code and playable experience.
+
+After implementation, give a concise report containing:
+- Features implemented.
+- Subjects and question types covered.
+- Known limitations.
+- Tests actually performed.
+- Recommended next development improvements.
+
+**Your highest priority is to create a genuinely educational, delightful, usable, mathematically reliable game that helps this child prepare confidently for her Grade 2 summative test.**
+
+Begin building now.
